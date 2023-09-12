@@ -1,0 +1,34 @@
+import React, {useState} from 'react';
+import '../registratn_comp/style.css';
+import HeaderLogin from './headerlogin';
+function LoginForm() {
+    return(
+        <> 
+        <div className='div1'>
+        <HeaderLogin />
+      <div className="form">
+          <div className="form-body">
+              <div className="email">
+                  <label className="form__label" for="email">Email </label>
+                  <input  type="email" id="email" className="form__input" placeholder="Email"/>
+              </div>
+              <div className="password">
+                  <label className="form__label" for="password">Password </label>
+                  <input className="form__input" type="password"  id="password" placeholder="Password"/>
+              </div>
+          </div>
+          <div className="footer">
+              <button type="submit" className='btn btn-primary'>Login</button>
+              <br></br>
+              <br></br>
+              <button type="submit" className='btn btn-primary'>Registration Page</button>
+              &nbsp;
+              &nbsp;
+              <button type="submit" className='btn btn-primary'>Home page</button>
+          </div>
+      </div>  
+      </div>
+      </>    
+    )       
+}
+export default LoginForm;
