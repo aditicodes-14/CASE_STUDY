@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import '../registratn_comp/style.css';
 import HeaderLogin from './headerlogin';
-import AdminLogin from './adminlogin';
 import { Route, Link } from 'react-router-dom';
 import HomePage from '../homepage/home';
-function LoginForm() {
+function AdminLogin() {
     return(
         <> 
         <div className='div1'>
@@ -21,18 +20,15 @@ function LoginForm() {
               </div>
           </div>
           <div className="footer">
-              <button type="submit" className='btn btn-primary'>Login</button>
+            <button type="submit" className='btn btn-primary'>Login</button>
+          
               <br></br>
               <br></br>
-              <Link to={"/registrationform"}><button type="submit" className='btn btn-primary'>Registration Page</button>
-              </Link>
+              {/* <Link to={"/registrationform"}><button type="submit" className='btn btn-primary'>Registration Page</button>
+              </Link> */}
               &nbsp;
               &nbsp;
-              <Link to={"/adminlogin"}><button type="submit" className='btn btn-primary'>Admin Login</button>
-              </Link>
-              &nbsp;
-              &nbsp;
-              <br/><br/>
+                 
               <Link to={"/home"}><button type="submit" className='btn btn-primary'>Home page</button>
               </Link>
           </div>
@@ -41,4 +37,4 @@ function LoginForm() {
       </>    
     )       
 }
-export default LoginForm;
+export default AdminLogin;
