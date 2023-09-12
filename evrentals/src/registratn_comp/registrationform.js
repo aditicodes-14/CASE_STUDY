@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './style.css';
 import './header';
 import Header from './header';
+import { Link } from 'react-router-dom';
 function RegistrationForm() {
     return(  
       
@@ -34,7 +35,9 @@ function RegistrationForm() {
               <button type="submit" className='btn btn-primary'>Register</button>
               <br></br>
               <br></br>
+              <Link to={"/loginform"}>
               <button type="submit" className='btn btn-primary'>Login Page</button>
+              </Link>
               &nbsp;
               &nbsp;
               <button type="submit" className='btn btn-primary'>Home page</button>
