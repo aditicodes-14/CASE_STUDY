@@ -20,7 +20,9 @@ function Navbar(){
                 </Link>
 
             </div>
+            <Link to={"/loginform"}>
             <div style={{flex:1, paddingTop:'15px'}}><button className="btn btn-primary" style={{display:'inline-block'}}>Sign In</button></div>
+            </Link>
             {/* <Router>
             <Routes> */}
   {/* <Route path='/' element={<AddMovie></AddMovie>}></Route> */}
