@@ -7,6 +7,7 @@ import {Routes,Route, BrowserRouter as Router} from "react-router-dom";
 import Navbar from './homepage/components/navbar/navbar';
 import Bodyhead from './homepage/components/bodyhead/selection';
 import Contact from './contactus';
+import RegistrationData from './registratn_comp/registrationdata';
 function App() {
   return (
     <div>
@@ -24,6 +25,7 @@ function App() {
       <Route path='/adminlogin' element={<AdminLogin/>}></Route>
       <Route path='/home' element={<HomePage/>}></Route>
       <Route path='/contact' element={<Contact/>}></Route>
+      <Route path='/registrationdata' element={<RegistrationData></RegistrationData>}/>
         </Routes>
       </Router>
       </div>
