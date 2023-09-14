@@ -3,6 +3,8 @@ import './style.css';
 import './header';
 import Header from './header';
 import { Link } from 'react-router-dom';
+import RegistrationFormData from './registrationdata';
+import HomePage from '../homepage/home';
 
 
 function RegistrationForm() {
@@ -11,6 +13,8 @@ function RegistrationForm() {
     const[lastName,setlastName]=useState("");
     const[password,setPassword]=useState("");
     const[email,setEmail]=useState("");
+    const[username,setusername]=useState("");
+    const[phone,setphone]=useState("");
     
 
     const signup=async ()=>{
@@ -24,7 +28,7 @@ function RegistrationForm() {
             "phone": 0
           };
           alert(user)
-        console.log(firstName,lastName,email,password);
+        console.log(firstName,lastName,email,phone,username,password);
         let result=await fetch("http://localhost:5027/api/User/AddUser",{
             method:'POST',
             body:JSON.stringify(user),
@@ -55,6 +59,14 @@ function RegistrationForm() {
                   <label className="form__label" for="email">Email </label>
                   <input  type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} className="form__input"  placeholder="Email"/>
               </div>
+              <div className="phone">
+                  <label className="form__label" for="phone">Phone </label>
+                  <input  type="long" name="" value={phone} onChange={(e)=>setphone(e.target.value)} id="phone" className="form__input" placeholder="Phone"/>
+              </div>
+              <div className="username">
+                  <label className="form__label" for="username">User Name </label>
+                  <input  type="text" name="" value={username} onChange={(e)=>setusername(e.target.value)} id="username" className="form__input"placeholder="Username"/>
+              </div>
               <div className="password">
                   <label className="form__label" for="password">Password </label>
                   <input className="form__input" type="password" value={password} onChange={(e)=>setPassword(e.target.value)} id="password" placeholder="Password"/>
@@ -65,6 +77,11 @@ function RegistrationForm() {
               <br></br>
               <br></br>
               <Link to={"/login"}><button className='btn btn-primary'>Login Page</button></Link>
+          
+              <br></br>
+              <br></br>
+              <Link to={"/home"}><button className='btn btn-primary'>Home</button></Link>
+          
           </div>
       </form>  
       </div>
