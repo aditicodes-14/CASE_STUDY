@@ -5,6 +5,7 @@ import Header from './header';
 import { Link } from 'react-router-dom';
 import RegistrationFormData from './registrationdata';
 import HomePage from '../homepage/home';
+import Navbar1 from '../homepage/components/navbar/navbar1';
 
 
 function RegistrationForm() {
@@ -44,6 +45,7 @@ function RegistrationForm() {
         
       
       <div className='div1'>
+        <Navbar1></Navbar1>
         <Header/>
       <form className="form">
           <div className="form-body">

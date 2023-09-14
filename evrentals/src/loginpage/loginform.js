@@ -3,11 +3,15 @@ import '../registratn_comp/style.css';
 import HeaderLogin from './headerlogin';
 import { Route, Link } from 'react-router-dom';
 import Display1 from '../homepage/components/dashboard';
+import Navbar1 from '../homepage/components/navbar/navbar1';
 function LoginForm() {
     return(
         <> 
         <div className='div1'>
+        <Navbar1></Navbar1>
         <HeaderLogin />
+
+
       <div className="form">
           <div className="form-body">
               <div className="email">

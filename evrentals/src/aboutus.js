@@ -1,15 +1,17 @@
 import React from "react";
 import './aboutuspage.css';
+import Navbar from "./homepage/components/navbar/navbar";
 
 
 function Aboutus(){
     return(
         <div className="div1">
+            <Navbar></Navbar>
             <div className="headerdiv"><div className='d-flex justify-content-center'><h2>About Us</h2></div></div>
-        <div>
+        <div className="content">
             <p>Welcome to Shell's EV Rental, your trusted destination for convenient, eco-friendly, and exhilarating electric vehicle rentals. We're on a mission to drive the future forward, one electric mile at a time.</p>
         </div>
-        <div><h3>Why choose us?</h3></div>
+        <div className="content"><h3>Why choose us?</h3>
         <div>
         <p>
             <ul>
@@ -20,8 +22,8 @@ function Aboutus(){
                 <li><b>Exceptional Service:</b> Our team is here to make your EV rental experience exceptional.</li>
             </ul>
         </p>
-        </div>
-        <div>
+        </div></div>
+        <div className="content">
         <p> <b>Join Us in Driving Change</b><br/>
             By choosing us, You're not just renting a vehicle; you're joining a movement toward a more sustainable and exciting future of transportation. Whether you're a seasoned EV driver or new to the electric revolution, we invite you to embark on a journey with us.
         <br/> Ready to experience the thrill of electric driving? Start your eco-conscious adventure today with Shell's EV Rental.

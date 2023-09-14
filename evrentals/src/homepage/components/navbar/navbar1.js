@@ -2,7 +2,7 @@ import React from "react";
 import './navbarstyle.css';
 import { Link } from "react-router-dom";
 import HomePage from "../../home";
-function Navbar(){
+function Navbar1(){
   return(
     <div className="dd" style={{display:'flex',backgroundColor: 'white', height: '60px',width: '100%'}} >
             <div style={{paddingTop:'7px',flex:8}}>
@@ -12,14 +12,9 @@ function Navbar(){
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Link to={"/aboutus"}><a  href="#" style={{display:'inline-block' , textDecoration:'none', color:'blue'}}>About Us</a></Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
-                <Link to={"/signup"}><button className="btn btn-primary" style={{display:'inline-block' }}>Register</button></Link>
-                
-
-            </div>
-            <div style={{flex:1, paddingTop:'15px'}}><Link to={"/login"}><button className="btn btn-primary" style={{display:'inline-block'}}>Sign In</button></Link></div>
-        </div>
+                </div>
+               </div>
   )
 }
 
-export default Navbar;
+export default Navbar1;
