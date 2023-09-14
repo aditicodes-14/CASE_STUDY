@@ -1,10 +1,11 @@
 import React from "react";
+import './aboutuspage.css';
 
 
 function Aboutus(){
     return(
-        <div>
-            <div><h1>About Us</h1></div>
+        <div className="div1">
+            <div className="headerdiv"><div className='d-flex justify-content-center'><h2>About Us</h2></div></div>
         <div>
             <p>Welcome to Shell's EV Rental, your trusted destination for convenient, eco-friendly, and exhilarating electric vehicle rentals. We're on a mission to drive the future forward, one electric mile at a time.</p>
         </div>
