@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React from "react";
 
-
+// import Booking from './booking';
 
 import {BrowserRouter, Route, Link, Routes} from 'react-router-dom';
 
@@ -44,11 +44,7 @@ componentDidMount(){
 
         });  
 
-    });  
-
-}  
-
- 
+    });  }  
 
     render(){
 
@@ -56,15 +52,9 @@ componentDidMount(){
 
             <div>
 
-               
-
-               
-
                 <hr/>
 
-                <h2>Cars List</h2>
-
-                <hr />
+                <h2>Cars List</h2> <hr />
 
                 <table className='table table-bordered table-striped'>
 
@@ -88,9 +78,13 @@ componentDidMount(){
 
                             <td>{obj.chargingTime}</td>
 
-                            <td>{obj.price}</td>
+                            <td>{obj.rentalPrice}</td>
 
-                              
+                           
+
+                           <td><Link to={"/booking/"+obj.vehicleId}><button type="submit" className='btn btn-primary'>Select</button> </Link></td>
+
+                           
 
                            
 
