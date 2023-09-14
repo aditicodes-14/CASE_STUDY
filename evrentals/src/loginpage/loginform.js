@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import '../registratn_comp/style.css';
 import HeaderLogin from './headerlogin';
+import { Route, Link } from 'react-router-dom';
 function LoginForm() {
     return(
         <> 
@@ -18,13 +19,10 @@ function LoginForm() {
               </div>
           </div>
           <div className="footer">
-              <button type="submit" className='btn btn-primary'>Login</button>
+          <Link to={"/*"}><button type="submit" className='btn btn-primary'>Login</button></Link>
               <br></br>
               <br></br>
-              <button type="submit" className='btn btn-primary'>Registration Page</button>
-              &nbsp;
-              &nbsp;
-              <button type="submit" className='btn btn-primary'>Home page</button>
+              <Link to={"/signup"}><button type="submit" className='btn btn-primary'>Registration Page</button></Link>
           </div>
       </div>  
       </div>
